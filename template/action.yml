@@ -1,0 +1,11 @@
+name: '{{name}}'
+description: '{{description}}'
+
+inputs:
+  token:
+    description: 'The GITHUB_TOKEN secret'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'build/index.js'

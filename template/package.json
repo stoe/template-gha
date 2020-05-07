@@ -1,0 +1,42 @@
+{
+  "name": "{{name}}",
+  "version": "{{version}}",
+  "description": "{{description}}",
+  "keywords": [],
+  "author": {
+    "name": "Stefan Stölzle",
+    "email": "stefan@stoelzle.me",
+    "url": "https://github.com/stoe"
+  },
+  "license": "MIT",
+  "repository": "stoe/{{name}}",
+  "engines": {
+    "node": ">=12",
+    "npm": ">=6",
+    "yarn": ">=1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "pack": "ncc build index.js",
+    "pretest": "github-lint",
+    "test": "ava",
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^2.1.1"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.1",
+    "ava": "^3.8.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-github": "^3.4.1"
+  },
+  "ava": {
+    "files": [
+      "__test__/*.js"
+    ],
+    "failFast": true,
+    "verbose": true
+  }
+}
