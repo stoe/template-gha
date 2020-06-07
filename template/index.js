@@ -1,12 +1,12 @@
 /**
  * {{_ "startCase" name}}.
  */
-const core = require('@actions/core')
-const github = require('@actions/github')
+import {getInput, setFailed} from '@actions/core'
+import github from '@actions/github'
 
 async function run() {
   try {
-    const token = core.getInput('token', {required: true})
+    const token = getInput('token', {required: true})
     const client = new github.GitHub(token)
 
     const {context} = github
@@ -14,7 +14,7 @@ async function run() {
 
     // TODO
   } catch (err) {
-    core.setFailed(err.message)
+    setFailed(err.message)
   }
 }
 

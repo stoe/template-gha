@@ -1,3 +1,12 @@
 {
-  "extends": ["plugin:github/es6", "plugin:github/node"]
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["github"],
+  "extends": ["plugin:github/recommended"]
 }
