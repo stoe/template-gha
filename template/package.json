@@ -12,34 +12,25 @@
   "repository": "stoe/{{name}}",
   "engines": {
     "node": ">=12",
-    "npm": ">=6",
-    "yarn": ">=1"
+    "npm": ">=6"
   },
   "main": "index.js",
   "scripts": {
     "pack": "ncc build index.js",
     "pretest": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
-    "test": "eslint . && ava",
+    "test": "eslint .",
     "start": "node ./index.js"
   },
   "dependencies": {
-    "@actions/core": "^1.2.4",
-    "@actions/github": "^2.1.1"
+    "@actions/core": "^0.0.0",
+    "@actions/github": "^0.0.0"
   },
   "devDependencies": {
-    "@github/prettier-config": "^0.0.4",
-    "@zeit/ncc": "^0.22.1",
-    "ava": "^3.8.2",
-    "eslint": "^7.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-github": "^4.0.1"
-  },
-  "ava": {
-    "files": [
-      "__test__/*.js"
-    ],
-    "failFast": true,
-    "verbose": true
+    "@github/prettier-config": "^0.0.0",
+    "@zeit/ncc": "^0.0.0",
+    "eslint": "^0.0.0",
+    "eslint-config-prettier": "^0.0.0",
+    "eslint-plugin-github": "^0.0.0"
   },
   "prettier": "@github/prettier-config"
 }
