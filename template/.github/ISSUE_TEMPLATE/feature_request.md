@@ -2,7 +2,7 @@
 name: 'Feature request'
 about: 'Suggest an idea for this project'
 title: 'PLEASE DESCRIBE THE FEATURE REQUEST'
-labels: ':construction: feature-request'
+labels: 'feature-request :construction:'
 assignees: ''
 ---
 

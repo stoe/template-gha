@@ -2,7 +2,7 @@
 name: 'Bug report'
 about: 'Create a bug report to help improve this project'
 title: 'PLEASE DESCRIBE THE BUG'
-labels: ':bug: bug'
+labels: 'bug :bug:'
 assignees: ''
 ---
 
