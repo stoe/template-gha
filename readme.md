@@ -1,6 +1,6 @@
 # template-gha
 
-> A template for a Node GitHub Actions.
+> A template for Node GitHub Actions.
 
 ## Install
 
